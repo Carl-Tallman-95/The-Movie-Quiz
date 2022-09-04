@@ -12,22 +12,30 @@
 <body>
     <div class="background">
         <div id="start-quiz-div">
-            <h2>Are you ready?</h2>
+            <h2 id="headerText">Are you ready?</h2>
             <br>
         </div>
-        <div id="start-quiz-container"><button></button>Start/Play</div>
         <br>
-        <div id="quiz">
-            <h3 id="question">What is the question?</h3>
-            <div id="answerA">Answer A</div>
-            <div id="answerB">Answer B</div>
-            <div id="answerC">Answer C</div>
-            <div id="answerD">Answer D</div>
-            
-            <div id="questionButton"><button>Submit Question</button></div>
+        <div id="quiz-box-container">
+            <div id="play"><button>Start/Play</button></div>
             <br>
+            <div id="quiz">
+                <h3 id="question">What is the question?</h3>
+                <div id="pick-answers">
+                    <div id="answerA">Answer A</div>
+                    <div id="answerB">Answer B</div>
+                    <div id="answerC">Answer C</div>
+                    <div id="answerD">Answer D</div>
+                </div>
+                <div id="submit-button">
+                    <button>Submit Question</button>
+                </div>
+                <br>
+                <div id="progress">Question 1 of 3</div>
+                <br>
+                <div id="scoreContainer">Score:</div>
+            </div>
         </div>
-        
     </div>
     <script src="assets/javascript/script.js"></script>
 </body>
