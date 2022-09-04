@@ -17,3 +17,36 @@ body {
 
 }
 
+#start-quiz-div {
+    text-align: center;
+    color: white;
+}
+
+#quiz-box-container {
+    text-align: center;
+}
+
+#quiz {
+    text-align: center;
+    color: white;
+}
+
+#answerA {
+
+}
+#answerB {
+    
+}
+#answerC {
+    
+}
+#answerD {
+    
+}
+
+.answer {
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid red;
+}
+
