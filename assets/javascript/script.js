@@ -60,12 +60,13 @@ let questions = [
 
 ];
 
+let currentQuestionIndex = 0;
+
+let score = 0;
+
 submitButton.addEventListener('click', nextQuestion);
 
-let currentIndex = 0;
-let score = "";
-
 function nextQuestion () {
-    currentIndex++;
-    question.innerHTML = questions[currentIndex].question;
+    currentQuestionIndex++;
+    question.innerHTML = questions[currentQuestionIndex].question;
 }

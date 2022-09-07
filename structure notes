@@ -1,0 +1,11 @@
+Set up the structure
+ what do we need to do? What does the computer se/display and what does the computer think?
+
+1. Display the start / play button
+2. When the user clicks on the start / play button, the first question is displayed.
+3. When the user clicks on one of the answers, the next question appears.
+    At the same time, add to the score count if the answer is correct.
+4. If the user clicks the answer for the last question,
+    the total score is displayed to the user.
+
+*
