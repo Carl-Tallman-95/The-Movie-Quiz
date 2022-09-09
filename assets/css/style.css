@@ -1,52 +1,133 @@
-body {
-    background-color: rgb(189, 120, 34);
+* {
+    box-sizing: border-box;
 }
 
-* {
+body {
+    background-color: rgb(189, 120, 34);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 .background {
     background: black;
-    padding: 80px 180px 80px 180px;;
+    padding: 80px 90px 80px 90px;
     border-radius: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+    overflow: hidden;
 }
+
 
 #start-quiz-div {
     text-align: center;
     color: white;
 }
 
+#progress {
+    text-align: center;
+    color: white;
+}
+
+
 #quiz-box-container {
     text-align: center;
 }
+
 
 #quiz {
     text-align: center;
     color: white;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 1.1rem;
+}
+
+ul li label {
+    cursor: pointer;
+}
+
 #answerA {
-
-}
-#answerB {
-    
-}
-#answerC {
-    
-}
-#answerD {
-    
-}
-
-.answer {
     padding: 10px;
     margin: 8px;
     border: 2px solid red;
 }
 
+#answerA:hover {
+    border: 2px solid rgb(74, 201, 31);
+}
+
+#answerB {
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid red;
+}
+
+#answerB:hover {
+    border: 2px solid rgb(74, 201, 31);
+}
+
+#answerC {
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid red;
+}
+
+#answerC:hover {
+    border: 2px solid rgb(74, 201, 31);
+}
+
+#answerD {
+    padding: 10px;
+    margin: 8px;
+    border: 2px solid red;
+}
+
+#answerD:hover {
+    border: 2px solid rgb(74, 201, 31);
+}
+
+.submit-button-class {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.submit-button-class:hover {
+    background-color: rgba(255, 255, 255, 0.882);
+}
+
+.play-button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 50px;
+    padding: 5px;
+}
+
+.play-button:hover {
+    background-color: rgba(255, 255, 255, 0.882);
+}
