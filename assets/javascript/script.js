@@ -54,16 +54,22 @@ function hideStartScreen() {
     document.getElementById("play").style.display = "none";
 }
 
+// 1.5 Function for displaying the "quiz" div content
+function displayQuiz() {
+    document.getElementById("quiz").style.display = "block";
+}
 
 
 // 1.2 function that, when clicked, hides the start screen and displays the quiz
 function onPlayButtonClick() {
-    // hide the text and play button
+    // (1.3) hide the text and play button
     hideStartScreen()
+    // (1.5) display the quiz
+    displayQuiz()
 }
 
 // 1.1 Add event listener for when the user clicks the start button
-// 1.4 We then call the playbutton function "onPlayButtonClick" in the event listener
+// 1.4 We then call the playbutton function "onPlayButtonClick" in the event listener after the 'click'
 playButton.addEventListener('click', onPlayButtonClick);
 
 
