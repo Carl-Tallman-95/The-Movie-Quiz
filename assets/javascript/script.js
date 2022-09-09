@@ -46,6 +46,25 @@ let questions = [
 
 ];
 
+// 1.0 Declaires the variable playButton from the id
+const playButton = document.getElementById("play-button");
+
+// 1.3 Function for hiding the "play" div content 
+function hideStartScreen() {
+    document.getElementById("play").style.display = "none";
+}
+
+
+
+// 1.2 function that, when clicked, hides the start screen and displays the quiz
+function onPlayButtonClick() {
+    // hide the text and play button
+    hideStartScreen()
+}
+
+// 1.1 Add event listener for when the user clicks the start button
+// We then call the playbutton function "onPlayButtonClick" in the event listener
+playButton.addEventListener('click', onPlayButtonClick);
 
 
 const play = document.getElementById("play");
