@@ -1,27 +1,13 @@
-const play = document.getElementById("play");
 
-const quiz = document.getElementById("quiz");
 
-const question = document.getElementById("question");
-
-const answerA = document.getElementById("answerA");
-const answerB = document.getElementById("answerB");
-const answerC = document.getElementById("answerC");
-const answerD = document.getElementById("answerD");
-
-const submitButton = document.getElementById("submit-button");
-
-const progress = document.getElementById("progress");
-
-const scoreContainer = document.getElementById("scoreContainer");
-
+// The questions stored inside an array with questions as objects
 let questions = [
     {
         question : "Who directed 'the shining' from 1980?",
 
         answerA : "Wrong",
 
-        choiceB : "Correct",
+        choiceB : "Stanley Kubrick",
 
         choiceC : "Wrong",
 
@@ -36,7 +22,7 @@ let questions = [
 
         choiceB : "Wrong",
 
-        choiceC : "Correct",
+        choiceC : "1977",
 
         choiceD : "Wrong",
 
@@ -46,7 +32,7 @@ let questions = [
 
         question : "What car was made famous by the film 'Back to the Future'?",
 
-        choiceA : "Correct",
+        choiceA : "DeLorean DMC-12",
 
         choiceB : "Wrong",
 
@@ -60,13 +46,27 @@ let questions = [
 
 ];
 
+
+
+const play = document.getElementById("play");
+
+const quiz = document.getElementById("quiz");
+
+const question = document.getElementById("questionText");
+
+const answerA = document.getElementById("answerA");
+const answerB = document.getElementById("answerB");
+const answerC = document.getElementById("answerC");
+const answerD = document.getElementById("answerD");
+
+
+const progress = document.getElementById("progress");
+
+const scoreContainer = document.getElementById("scoreContainer");
+
+
+// Question index
 let currentQuestionIndex = 0;
 
+// Score count
 let score = 0;
-
-submitButton.addEventListener('click', nextQuestion);
-
-function nextQuestion () {
-    currentQuestionIndex++;
-    question.innerHTML = questions[currentQuestionIndex].question;
-}
