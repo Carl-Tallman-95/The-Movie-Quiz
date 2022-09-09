@@ -7,5 +7,8 @@ Set up the structure
     At the same time, add to the score count if the answer is correct.
 4. If the user clicks the answer for the last question,
     the total score is displayed to the user.
-
+    The result page will say "Thank you for completing my quiz!" "Your score is: __"
+    with the total score displayed after "is: "
+5. In the final result page you will have a "Try again?" button for starting the quiz over
+    with the score being reset to 0.
 *

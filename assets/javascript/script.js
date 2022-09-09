@@ -63,7 +63,7 @@ function onPlayButtonClick() {
 }
 
 // 1.1 Add event listener for when the user clicks the start button
-// We then call the playbutton function "onPlayButtonClick" in the event listener
+// 1.4 We then call the playbutton function "onPlayButtonClick" in the event listener
 playButton.addEventListener('click', onPlayButtonClick);
 
 
