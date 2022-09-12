@@ -155,6 +155,9 @@ let score = 0;
 // (1.0) Declaires the variable playButton from the id
 const playButton = document.getElementById("play-button");
 
+// Declaires the variable for the score container
+const scoreContainer = document.getElementById("scoreContainer");
+
 // (1.3) Function for hiding the "play" div content 
 function hideStartScreen() {
     document.getElementById("play").style.display = "none";
@@ -166,13 +169,19 @@ function displayQuiz() {
 }
 
 // (2.0) Displays the first question number in the quiz
-function displayFirstQuestionNumber(questionNumber) {
+function displayQuestionNumber(questionNumber) {
     document.getElementById("progress").innerHTML = `Question ${questionNumber} of ${questions.length}`;
 }
 
 // (2.1) Display the first question title in the quiz
 function displayFirstQuestionTitle() {
     document.getElementById("questionText").innerHTML = questions[0].title
+}
+
+// Displays the current score
+// And add the string litterals to add the text and uppdate the score
+function displayScore() {
+    document.getElementById('scoreContainer').innerHTML = `Score: ${score}`;
 }
 
 // (3.2) Declare the answer variables from the ids
@@ -192,11 +201,13 @@ function showAnswers() {
 // (3.0) function for displaying the questions answers
 function displayQuestion(questionIndex) {
     // (3.4) Displays the question number
-    displayFirstQuestionNumber(questionIndex +=1)
+    displayQuestionNumber(questionIndex +=1)
 
     displayFirstQuestionTitle()
     // (3.3) Displaying the answers string
     showAnswers(questionIndex)
+    // Displays the score
+    displayScore()
 }
 
 // 1.2 function that, when clicked, hides the start screen and displays the first question in the quiz
@@ -206,11 +217,12 @@ function onPlayButtonClick() {
     // (1.5) display the quiz
     displayQuiz()
     // (2.0) display the first question number
-    displayFirstQuestionNumber()
+    displayQuestionNumber()
     // (2.1) display the first question title
     displayFirstQuestionTitle()
     // (3.1) display the question answers
     displayQuestion(0)
+
 }
 
 // 1.1 Add event listener for when the user clicks the start button
@@ -248,5 +260,4 @@ const question = document.getElementById("questionText");
 
 const progress = document.getElementById("progress");
 
-const scoreContainer = document.getElementById("scoreContainer");
 
