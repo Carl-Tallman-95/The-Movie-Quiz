@@ -152,11 +152,24 @@ let currentQuestionIndex = 0;
 // Score count
 let score = 0;
 
-// (1.0) Declaires the variable playButton from the id
+// Declare the quiz variable
+const quiz = document.getElementById("quiz");
+
+// Declare the variables
+const progress = document.getElementById("progress");
+
+// Declare the question title
+const questionText = document.getElementById("questionText");
+
+// (1.0) Declares the variable playButton from the id
 const playButton = document.getElementById("play-button");
 
-// Declaires the variable for the score container
+// (3.5) Declares the variable for the score container
+const quizContainer = document.getElementById("quiz-container");
+
+// Declares the variable for the score container
 const scoreContainer = document.getElementById("scoreContainer");
+
 
 // (1.3) Function for hiding the "play" div content 
 function hideStartScreen() {
@@ -173,8 +186,9 @@ function displayQuestionNumber(questionNumber) {
     document.getElementById("progress").innerHTML = `Question ${questionNumber} of ${questions.length}`;
 }
 
-// (2.1) Display the first question title in the quiz
-function displayFirstQuestionTitle(questionIndex) {
+// (2.1) Display the question title in the quiz
+// Add the local paramamter questionIndex so we can reference it as the index
+function displayQuestionTitle(questionIndex) {
     document.getElementById("questionText").innerHTML = questions[questionIndex].title
 }
 
@@ -198,13 +212,13 @@ function showAnswers(questionIndex) {
     answerD.innerHTML = questions[questionIndex].choiceD;
 }
 
-// (3.0) function for displaying the questions answers
+// (3.0) function for displaying the questions number, title, answers and score
 function displayQuestion(questionIndex) {
     // (3.4) Displays the question number
-    displayQuestionNumber(questionIndex +=1)
+    displayQuestionNumber(questionIndex +1)
     
     // (2.1) display the first question title
-    displayFirstQuestionTitle(questionIndex)
+    displayQuestionTitle(questionIndex)
     // (3.3) Displaying the answers string
     showAnswers(questionIndex)
     // Displays the score
@@ -215,9 +229,9 @@ function displayQuestion(questionIndex) {
 function onPlayButtonClick() {
     // (1.3) hide the text and play button
     hideStartScreen()
-    // (1.5) display the quiz
+    // (1.5) display the quiz display from 'none' to 'block'
     displayQuiz()
-    // (3.1) display the question answers
+    // (3.1) display the question number, title, answers and score
     displayQuestion(0)
 
 }
@@ -226,45 +240,45 @@ function onPlayButtonClick() {
 // 1.4 We then call the playbutton function "onPlayButtonClick" in the event listener after the 'click'
 playButton.addEventListener('click', onPlayButtonClick);
 
-// (3.6) Function to go to the next question in the array
+// (3.7) Function to go to the next question in the array
 function onAnswerAButtonClick() {
-    goToNextQuestion()
+    goToNextQuestion('A')
 }
 function onAnswerBButtonClick() {
-    goToNextQuestion()
+    goToNextQuestion('B')
 }
 function onAnswerCButtonClick() {
-    goToNextQuestion()
+    goToNextQuestion('C')
 }
 function onAnswerDButtonClick() {
-    goToNextQuestion()
+    goToNextQuestion('D')
 }
 
-// (4.0)
-function goToNextQuestion() {
+// (4.0) Reduces the code to make the function change depending on the object answers using string litterals
+// We add the parameter selectedChoice so we can change it depending on what answer the user clicks
+function goToNextQuestion(selectedChoice) {
+    if (questions[currentQuestionIndex].correct === questions[currentQuestionIndex][`choice${selectedChoice}`]) {
+        score++
+    }
+    // (4.1) if current question is the last question, the length of the array has to reduce by 1
+    if (currentQuestionIndex === questions.length -1) {
+        // hide the quiz
+        quizContainer.style.display = "none";
+        // and display the message to the user
+        scoreContainer.innerHTML = `Thank you for finishing my quiz! <br/><br/> Your score is: ${score}`;
+    }
     currentQuestionIndex +=1;
     displayQuestion(currentQuestionIndex)
 
 }
 
 // Individual event listeners
-// (3.5) Add the function parameter for each answer event listenre
+// (3.6) Add the function parameter for each answer event listenre
 answerA.addEventListener('click', onAnswerAButtonClick);
 answerB.addEventListener('click', onAnswerBButtonClick);
 answerC.addEventListener('click', onAnswerCButtonClick);
 answerD.addEventListener('click', onAnswerDButtonClick);
 
 
-
-// Declare the variables
-const play = document.getElementById("play");
-
-const quiz = document.getElementById("quiz");
-
-// Declare the question title
-const questionText = document.getElementById("questionText");
-
-
-const progress = document.getElementById("progress");
 
 
