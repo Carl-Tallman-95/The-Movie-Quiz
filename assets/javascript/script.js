@@ -174,8 +174,8 @@ function displayQuestionNumber(questionNumber) {
 }
 
 // (2.1) Display the first question title in the quiz
-function displayFirstQuestionTitle() {
-    document.getElementById("questionText").innerHTML = questions[0].title
+function displayFirstQuestionTitle(questionIndex) {
+    document.getElementById("questionText").innerHTML = questions[questionIndex].title
 }
 
 // Displays the current score
@@ -202,8 +202,9 @@ function showAnswers() {
 function displayQuestion(questionIndex) {
     // (3.4) Displays the question number
     displayQuestionNumber(questionIndex +=1)
-
-    displayFirstQuestionTitle()
+    
+    // (2.1) display the first question title
+    displayFirstQuestionTitle(questionIndex)
     // (3.3) Displaying the answers string
     showAnswers(questionIndex)
     // Displays the score
@@ -216,10 +217,6 @@ function onPlayButtonClick() {
     hideStartScreen()
     // (1.5) display the quiz
     displayQuiz()
-    // (2.0) display the first question number
-    displayQuestionNumber()
-    // (2.1) display the first question title
-    displayFirstQuestionTitle()
     // (3.1) display the question answers
     displayQuestion(0)
 
