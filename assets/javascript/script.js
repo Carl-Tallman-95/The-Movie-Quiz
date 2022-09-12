@@ -166,8 +166,8 @@ function displayQuiz() {
 }
 
 // (2.0) Displays the first question number in the quiz
-function displayFirstQuestionNumber() {
-    document.getElementById("progress").innerHTML = "Question 1 of " + questions.length;
+function displayFirstQuestionNumber(questionNumber) {
+    document.getElementById("progress").innerHTML = `Question ${questionNumber} of ${questions.length}`;
 }
 
 // (2.1) Display the first question title in the quiz
@@ -190,8 +190,13 @@ function showAnswers() {
 }
 
 // (3.0) function for displaying the questions answers
-function displayQuestion() {
-    showAnswers()
+function displayQuestion(questionIndex) {
+    // (3.4) Displays the question number
+    displayFirstQuestionNumber(questionIndex +=1)
+
+    displayFirstQuestionTitle()
+    // (3.3) Displaying the answers string
+    showAnswers(questionIndex)
 }
 
 // 1.2 function that, when clicked, hides the start screen and displays the first question in the quiz
@@ -205,12 +210,31 @@ function onPlayButtonClick() {
     // (2.1) display the first question title
     displayFirstQuestionTitle()
     // (3.1) display the question answers
-    displayQuestion()
+    displayQuestion(0)
 }
 
 // 1.1 Add event listener for when the user clicks the start button
 // 1.4 We then call the playbutton function "onPlayButtonClick" in the event listener after the 'click'
 playButton.addEventListener('click', onPlayButtonClick);
+
+// (3.6) Function
+function onAnswerAButtonClick() {
+    goToNextQuestion()
+}
+
+// (4.0)
+function goToNextQuestion() {
+    currentQuestionIndex +=1;
+    displayQuestion(currentQuestionIndex)
+
+}
+
+// Individual event listeners
+// (3.5) Add the function parameter for each answer event listenre
+answerA.addEventListener('click', onAnswerAButtonClick);
+answerB.addEventListener('click', );
+answerC.addEventListener('click', );
+answerD.addEventListener('click', );
 
 
 
