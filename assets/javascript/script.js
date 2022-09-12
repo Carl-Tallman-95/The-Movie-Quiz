@@ -4,7 +4,7 @@
 let questions = [
     {
 
-        title : "Who directed “the shining“ from 1980?",
+        title : "Who directed “The Shining“ from 1980?",
 
         choiceA : "Steven Spielberg",
 
@@ -149,31 +149,50 @@ let questions = [
 // Question index
 let currentQuestionIndex = 0;
 
+// Score count
+let score = 0;
 
-
-// 1.0 Declaires the variable playButton from the id
+// (1.0) Declaires the variable playButton from the id
 const playButton = document.getElementById("play-button");
 
-// 1.3 Function for hiding the "play" div content 
+// (1.3) Function for hiding the "play" div content 
 function hideStartScreen() {
     document.getElementById("play").style.display = "none";
 }
 
-// 1.5 Function for displaying the "quiz" div content
+// (1.5) Function for displaying the "quiz" div content
 function displayQuiz() {
     document.getElementById("quiz").style.display = "block";
 }
 
-// 2.0 Displays the first question number in the quiz
+// (2.0) Displays the first question number in the quiz
 function displayFirstQuestionNumber() {
     document.getElementById("progress").innerHTML = "Question 1 of " + questions.length;
 }
 
-// 2.1 Display the first question title in the quiz
+// (2.1) Display the first question title in the quiz
 function displayFirstQuestionTitle() {
     document.getElementById("questionText").innerHTML = questions[0].title
 }
 
+// (3.2) Declare the answer variables from the ids
+const answerA = document.getElementById("answerA");
+const answerB = document.getElementById("answerB");
+const answerC = document.getElementById("answerC");
+const answerD = document.getElementById("answerD");
+
+// (3.3) Function for displaying the answers string into the div
+function showAnswers() {
+    answerA.innerHTML = questions[0].choiceA;
+    answerB.innerHTML = questions[0].choiceB;
+    answerC.innerHTML = questions[0].choiceC;
+    answerD.innerHTML = questions[0].choiceD;
+}
+
+// (3.0) function for displaying the questions answers
+function displayQuestion() {
+    showAnswers()
+}
 
 // 1.2 function that, when clicked, hides the start screen and displays the first question in the quiz
 function onPlayButtonClick() {
@@ -185,6 +204,8 @@ function onPlayButtonClick() {
     displayFirstQuestionNumber()
     // (2.1) display the first question title
     displayFirstQuestionTitle()
+    // (3.1) display the question answers
+    displayQuestion()
 }
 
 // 1.1 Add event listener for when the user clicks the start button
@@ -200,18 +221,8 @@ const quiz = document.getElementById("quiz");
 
 const question = document.getElementById("questionText");
 
-const answerA = document.getElementById("answerA");
-const answerB = document.getElementById("answerB");
-const answerC = document.getElementById("answerC");
-const answerD = document.getElementById("answerD");
-
 
 const progress = document.getElementById("progress");
 
 const scoreContainer = document.getElementById("scoreContainer");
 
-
-
-
-// Score count
-let score = 0;
