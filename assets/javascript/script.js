@@ -3,44 +3,144 @@
 // The questions stored inside an array with questions as objects
 let questions = [
     {
-        title : "Who directed 'the shining' from 1980?",
 
-        answerA : "Wrong",
+        title : "Who directed “the shining“ from 1980?",
+
+        choiceA : "Steven Spielberg",
 
         choiceB : "Stanley Kubrick",
 
-        choiceC : "Wrong",
+        choiceC : "John Carpenter",
 
-        choiceD : "Wrong",
+        choiceD : "Tobe Hooper",
 
         correct : "Stanley Kubrick"
+
     }, {
 
-        title : "What year did the first 'Star Wars' film come out?",
+        title : "What year did the first “Star Wars“ film come out?",
 
-        choiceA : "Wrong",
+        choiceA : "1984",
 
-        choiceB : "Wrong",
+        choiceB : "1980",
 
         choiceC : "1977",
 
-        choiceD : "Wrong",
+        choiceD : "1975",
 
         correct : "1977"
 
     }, {
 
-        title : "What car was made famous by the film 'Back to the Future'?",
+        title : "What car was made famous by the film “Back to the Future“?",
 
         choiceA : "DeLorean DMC-12",
 
-        choiceB : "Wrong",
+        choiceB : "Oldsmobile Delta 88",
 
-        choiceC : "Wrong",
+        choiceC : "1982 Pontiac Trans Am",
 
-        choiceD : "Wrong",
+        choiceD : "Ferrari 308 GTS",
 
         correct : "DeLorean DMC-12"
+
+    }, {
+
+        title : "Which actor had the main role in “Modern Times” and “The Kid”?",
+
+        choiceA : "Buster Keaton",
+
+        choiceB : "Mickey Rooney",
+
+        choiceC : "George Arliss",
+
+        choiceD : "Charlie Chaplin",
+
+        correct : "Charlie Chaplin"
+
+    }, {
+
+        title : "In “The Shawshank Redemption”, what is the Shawshank?",
+
+        choiceA : "A Hospital",
+
+        choiceB : "A Prison",
+
+        choiceC : "A School",
+
+        choiceD : "A Castle",
+
+        correct : "A Prison"
+
+    }, {
+
+        title : "How fast does the bus have to go in the movie “Speed“?",
+
+        choiceA : "50 mph",
+
+        choiceB : "100 mph",
+
+        choiceC : "150 mph",
+
+        choiceD : "200 mph",
+
+        correct : "50 mph"
+
+    }, {
+
+        title : "In which city is “West Side Story” set?",
+
+        choiceA : "New York",
+
+        choiceB : "Los Angeles",
+
+        choiceC : "Chicago",
+
+        choiceD : "San Francisco",
+
+        correct : "New York"
+
+    }, {
+
+        title : "At what time does “It's a Wonderful Life“ take place?",
+
+        choiceA : "Midsummer",
+
+        choiceB : "Halloween",
+
+        choiceC : "Christmas",
+
+        choiceD : "Easter",
+
+        correct : "Christmas"
+
+    }, {
+
+        title : "Who wrote the screenplay for “Rocky“?",
+
+        choiceA : "Aaron Sorkin",
+
+        choiceB : "Billy Wilder",
+
+        choiceC : "The Coen Brothers",
+
+        choiceD : "Sylvester Stallone",
+
+        correct : "Sylvester Stallone"
+
+    }, {
+
+        title : "What color is Dorothy's shoes in “The Wizard of Oz?“",
+
+        choiceA : "Green",
+
+        choiceB : "Red",
+
+        choiceC : "Blue",
+
+        choiceD : "Yellow",
+
+        correct : "Red"
 
     }
 
