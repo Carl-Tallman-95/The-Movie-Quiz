@@ -191,11 +191,11 @@ const answerC = document.getElementById("answerC");
 const answerD = document.getElementById("answerD");
 
 // (3.3) Function for displaying the answers string into the div
-function showAnswers() {
-    answerA.innerHTML = questions[0].choiceA;
-    answerB.innerHTML = questions[0].choiceB;
-    answerC.innerHTML = questions[0].choiceC;
-    answerD.innerHTML = questions[0].choiceD;
+function showAnswers(questionIndex) {
+    answerA.innerHTML = questions[questionIndex].choiceA;
+    answerB.innerHTML = questions[questionIndex].choiceB;
+    answerC.innerHTML = questions[questionIndex].choiceC;
+    answerD.innerHTML = questions[questionIndex].choiceD;
 }
 
 // (3.0) function for displaying the questions answers
@@ -226,8 +226,17 @@ function onPlayButtonClick() {
 // 1.4 We then call the playbutton function "onPlayButtonClick" in the event listener after the 'click'
 playButton.addEventListener('click', onPlayButtonClick);
 
-// (3.6) Function
+// (3.6) Function to go to the next question in the array
 function onAnswerAButtonClick() {
+    goToNextQuestion()
+}
+function onAnswerBButtonClick() {
+    goToNextQuestion()
+}
+function onAnswerCButtonClick() {
+    goToNextQuestion()
+}
+function onAnswerDButtonClick() {
     goToNextQuestion()
 }
 
@@ -241,18 +250,19 @@ function goToNextQuestion() {
 // Individual event listeners
 // (3.5) Add the function parameter for each answer event listenre
 answerA.addEventListener('click', onAnswerAButtonClick);
-answerB.addEventListener('click', );
-answerC.addEventListener('click', );
-answerD.addEventListener('click', );
+answerB.addEventListener('click', onAnswerBButtonClick);
+answerC.addEventListener('click', onAnswerCButtonClick);
+answerD.addEventListener('click', onAnswerDButtonClick);
 
 
 
-
+// Declare the variables
 const play = document.getElementById("play");
 
 const quiz = document.getElementById("quiz");
 
-const question = document.getElementById("questionText");
+// Declare the question title
+const questionText = document.getElementById("questionText");
 
 
 const progress = document.getElementById("progress");
