@@ -170,6 +170,28 @@ const quizContainer = document.getElementById("quiz-container");
 // Declares the variable for the score container
 const scoreContainer = document.getElementById("scoreContainer");
 
+// Modal JS (bonus)
+// Declare variables for the modal, button and span
+const modal = document.getElementById("modal-popup");
+// opens the modal
+const btn = document.getElementById("modal-trigger");
+// closes the modal
+const span = document.getElementsByClassName("close")[0];
+
+// When user clicks the button, open the modal
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+// When the user clicks on span, close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(closeEvent) {
+    if (closeEvent.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 // (1.3) Function for hiding the "play" div content 
 function hideStartScreen() {
