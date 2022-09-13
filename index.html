@@ -10,14 +10,16 @@
     <title>The Movie Quiz</title>
 </head>
 <body>
+  <!--The div background -->
     <div class="background">
         <br />
-  
+        <!--The quiz box container -->
         <div id="quiz-box-container">
           <br />
+          <!--The div that contains the content for the play screen-->
           <div id="play">
             <div id="start-quiz-div">
-              <h2 id="headerText">ARE YOU READY?</h2>
+              <h2 id="headerText">THE MOVIE QUIZ!</h2>
             </div>
             <button id="modal-trigger">?</button>
               <div id="modal-popup">
@@ -28,30 +30,32 @@
             <br>
             <button class="play-button" id="play-button">PLAY!</button>
           </div>
-          <div id="quiz" style="display: none">
-            <div id="quiz-container">
-            <div id="progress"></div>
-            <h3 id="questionText"></h3>
-            <div id="pick-answers">
-              <div class="answer" id="answerA">
-                Answer A
+            <!--The quiz content-->
+            <div id="quiz" style="display: none">
+              <div id="quiz-container">
+              <div id="progress"></div>
+              <h3 id="questionText"></h3>
+              <div id="pick-answers">
+                <div class="answer" id="answerA">
+                  Answer A
+                </div>
+                <div class="answer" id="answerB">
+                  Answer B
+                </div>
+                <div class="answer" id="answerC">
+                  Answer C
+                </div>
+                <div class="answer" id="answerD">
+                  Answer D
+                </div>
               </div>
-              <div class="answer" id="answerB">
-                Answer B
-              </div>
-              <div class="answer" id="answerC">
-                Answer C
-              </div>
-              <div class="answer" id="answerD">
-                Answer D
-              </div>
+              <br />
             </div>
-            <br />
-          </div>
-            <div id="scoreContainer">Score:</div>
-          </div>
+              <div id="scoreContainer">Score:</div>
+            </div>
         </div>
       </div>
+      <!--The JavaScript code link-->
     <script src="assets/javascript/script.js"></script>
 </body>
 </html>
