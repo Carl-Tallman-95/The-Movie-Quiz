@@ -203,7 +203,7 @@ function hideStartScreen() {
 
 // (1.5) Function for displaying the "quiz" div content
 function displayQuiz() {
-    document.getElementById("quiz").style.display = "block";
+    quiz.style.display = "block";
 }
 
 // (2.0) Displays the first question number in the quiz
@@ -307,5 +307,21 @@ answerC.addEventListener('click', onAnswerCButtonClick);
 answerD.addEventListener('click', onAnswerDButtonClick);
 
 
+function quitQuestionFunction() {
+    if (currentQuestionIndex === 9) {
+        return;
+        goToNextQuestion();
+    }
+}
 
+quitQuestionFunction();
+
+
+// function quitQuestionFunction() {
+//    if () {
+//        return
+//      } 
+//   }
+//
+//
 
