@@ -267,6 +267,71 @@ ul li label {
     cursor: pointer;
 }
 
+/* footer */
+footer {
+    background: #222222;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-section-content {
+    text-align: center;
+}
+
+.footer-section-content p {
+    color: #777;
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.social-networks {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.social-networks li {
+    margin: 0 35px;
+}
+
+.social-networks a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-networks a i {
+    font-size: 1.1rem;
+    transition: color 0.4s;
+}
+
+.social-networks a:hover i {
+    color: rgb(189, 120, 34);;
+}
+
+.footer-section-bottom {
+    background: rgb(0, 0, 0);
+    width: 100%;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.footer-section-bottom p {
+    color: #777;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
 /* Media queries*/
 @media only screen and (min-width: 320px) {
     .background-container {
