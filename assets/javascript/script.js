@@ -170,6 +170,9 @@ const quizContainer = document.getElementById("quiz-container");
 // Declares the variable for the score container
 const scoreContainer = document.getElementById("scoreContainer");
 
+// Declares the variable for the return button
+const showReturnButton = document.getElementById("show-return-button");
+
 // Modal JS (bonus)
 // Declare variables for the modal, button and span
 const modal = document.getElementById("modal-popup");
@@ -287,7 +290,9 @@ function goToNextQuestion(selectedChoice) {
         // hide the quiz
         quizContainer.style.display = "none";
         // and display the message to the user
-        scoreContainer.innerHTML = `Thank you for finishing my quiz! <br/><br/> Your score is: ${score}`;
+        scoreContainer.innerHTML = `Thank you for finishing my quiz! <br/><br/> Your score is: ${score} out of ${questions.length}`;
+        // display the return button from the div
+        showReturnButton.style.display = "block";
     }
     currentQuestionIndex +=1;
     displayQuestion(currentQuestionIndex)
