@@ -8,6 +8,12 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 
 ## Features
 
+- The Header
+    - The header featured at the top of the page shows to the user bar with an icon with the text "QUIZ" next to it that, when clicked, the user is taken back to the home page.
+    - The user can at any point click the element in the header to return to the home page for a better user experience.
+
+![This is an image]()
+
 - "The Titel" and "The Modal" / "Instructions"
     - Featured at the top of the quiz game box, the user is introduced by a title screen that displays the name of the game.
     - The title clearly tells the user what game they are about to play and what the subject of the game is about. 
@@ -40,3 +46,75 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
     - There are four available answers displayed below the question title. The user can only pick one that, when clicked, will change to the next questions answers.
     - When a user hovers over an answer, the answer will slightly change and scale up for a more satisfactory user experience.
     - The answers are relevant to the subject with one correct answer for each question and uses easly readable text.
+
+![This is an image](assets/images/readme_images/)
+
+- The Quiz Score
+    - The score featured below the answers dislays to the user their current score. Every time the user picks the right answer, the score increases by one.
+
+![This is an image]()
+
+- The Completed Quiz Screen
+    - 
+
+![This is an image]()
+
+- The footer
+
+    Featured at the bottom of the screen, the footer includes two social media links to my LinkedIn and GitHub profile. When clicked, the links will open in a new tab for easy navigation for the user.
+    - The footer encourages users of the site to stay connected with via social media.
+
+![This is an image](assets/images/readme_images/)
+
+**Features Left to Implement**
+- I would have liked to make a timer and a randomized question generator to make the game more challenging. This would of course mean that more questions would have to be added.
+It would also be useful if the user could enter their name that will be displayed at the end of the quiz along with their score.
+
+## Testing
+
+- I have tested this project site on different web browsers. Google Chrome, Microsoft Edge and Mozilla Firefox have all been tested and are working.
+- Tests while using the site on a Samsung smartphone are also working.
+- I have confirmed that the site is looking good and is responsive on different screen sizes by using the dev tools device toolbar.
+
+## Bugs
+**Solved bugs**
+- 
+
+**Unfixed bugs**
+
+- No unfixed bugs.
+
+## Validator Testing
+
+- CSS
+    - No errors were found when passing through the official [(Jigsaw) validator]().
+
+- JSHint
+    - No warnings were found when passing through the official []()
+
+- Accessibility
+    - I have confirmed that the colors and fonts chosen for this project are easy to read and accessible by using the lighthouse in dev tools.
+
+    ![This is an image](assets/images/readme_images/)
+
+## Deployment
+
+### GitHub pages deployment
+- The website was deployed using GitHub pages. To deploy you will need to:
+    - Navigate to the GitHub repository, then navigate to the Settings tab.
+    - Select the ***Pages***  tab on the left-hand menu.
+    - Under the source section drop-down menu, select "Main" branch and save. It should look similar to this:
+    ![This is an image](assets/images/readme_images/)
+
+The Live link can be found here - [THE-MOVIE-QUIZ]()
+
+ ### Creating a Clone
+
+
+ ## Credits
+**Content**
+
+
+**Media**
+- The fonts used (Bebas Neue,  and ) was taken from [Google Fonts](https://fonts.google.com/).
+- The icons used in the header aswell as the footer was taken from the free kit on [Font Awesome](https://fontawesome.com/).
