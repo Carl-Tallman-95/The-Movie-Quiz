@@ -24,105 +24,55 @@ let questions = [
         choiceD : "Ferrari 308 GTS",
         correct : "DeLorean DMC-12"
     }, {
-
         title : "Which actor had the main role in “Modern Times” and “The Kid”?",
-
         choiceA : "Buster Keaton",
-
         choiceB : "Mickey Rooney",
-
         choiceC : "George Arliss",
-
         choiceD : "Charlie Chaplin",
-
         correct : "Charlie Chaplin"
-
     }, {
-
         title : "In “The Shawshank Redemption”, what is the Shawshank?",
-
         choiceA : "A Hospital",
-
         choiceB : "A Prison",
-
         choiceC : "A School",
-
         choiceD : "A Castle",
-
         correct : "A Prison"
-
     }, {
-
         title : "How fast does the bus have to go in the movie “Speed“?",
-
         choiceA : "50 mph",
-
         choiceB : "100 mph",
-
         choiceC : "150 mph",
-
         choiceD : "200 mph",
-
         correct : "50 mph"
-
     }, {
-
         title : "In which city is “West Side Story” set?",
-
         choiceA : "New York",
-
         choiceB : "Los Angeles",
-
         choiceC : "Chicago",
-
         choiceD : "San Francisco",
-
         correct : "New York"
-
     }, {
-
         title : "At what time does “It's a Wonderful Life“ take place?",
-
         choiceA : "Midsummer",
-
         choiceB : "Halloween",
-
         choiceC : "Christmas",
-
         choiceD : "Easter",
-
         correct : "Christmas"
-
     }, {
-
         title : "Who wrote the screenplay for “Rocky“?",
-
         choiceA : "Aaron Sorkin",
-
         choiceB : "Billy Wilder",
-
         choiceC : "The Coen Brothers",
-
         choiceD : "Sylvester Stallone",
-
         correct : "Sylvester Stallone"
-
     }, {
-
         title : "What color is Dorothy's shoes in “The Wizard of Oz?“",
-
         choiceA : "Green",
-
         choiceB : "Red",
-
         choiceC : "Blue",
-
         choiceD : "Yellow",
-
         correct : "Red"
-
     }
-
 ];
 
 // Question index
@@ -158,34 +108,32 @@ window.onclick = function(closeEvent) {
     }
 };
 
-// (1.3) Function for hiding the "play" div content 
+// Hide div content 
 function hideStartScreen() {
     document.getElementById("play").style.display = "none";
 }
 
-// (1.5) Function for displaying the "quiz" div content
+// Display "quiz" div content
 function displayQuiz() {
     quiz.style.display = "block";
 }
 
-// (2.0) Displays the first question number in the quiz
+// Display question number
 function displayQuestionNumber(questionNumber) {
     progress.innerHTML = `Question ${questionNumber} of ${questions.length}`;
 }
 
-// (2.1) Display the question title in the quiz
-// Add the local paramamter questionIndex so we can reference it as the index
+// Display question title
 function displayQuestionTitle(questionIndex) {
     questionText.innerHTML = questions[questionIndex].title;
 }
 
-// Displays the current score
-// And add the string litterals to add the text and uppdate the score
+// Display score
 function displayScore() {
     document.getElementById('scoreContainer').innerHTML = `Score: ${score}`;
 }
 
-// (3.2) Declare the answer variables from the ids
+// Declare answer variables from ids
 const answerA = document.getElementById("answerA");
 const answerB = document.getElementById("answerB");
 const answerC = document.getElementById("answerC");

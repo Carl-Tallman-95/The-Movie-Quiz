@@ -363,9 +363,6 @@ footer {
     .background-container {
         width: 95%;
     }
-    .background {
-        padding: 80px 30px 80px 30px;
-    }
 
     #modal-popup {
         padding-top: 50%;
@@ -381,14 +378,11 @@ footer {
 
 @media only screen and (min-width: 400px) {
     .top-header {
-        height: 80px;
+        height: 60px;
     }
     .background-container {
         width: 85%;
         padding-bottom: 60px;
-    }
-    .background {
-        padding: 90px 40px 90px 40px;
     }
     h2 {
         font-size: 34px;
