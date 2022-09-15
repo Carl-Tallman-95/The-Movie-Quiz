@@ -359,9 +359,13 @@ footer {
 
 /* Media queries*/
 @media only screen and (min-width: 320px) {
-    
+    .top-header {
+        height: 50px;
+    }
+
     .background-container {
         width: 95%;
+        padding-bottom: 90px;
     }
 
     #modal-popup {
@@ -380,9 +384,12 @@ footer {
     .top-header {
         height: 60px;
     }
+    .background {
+        padding: 20px 50px 20px 50px;
+    }
     .background-container {
         width: 85%;
-        padding-bottom: 60px;
+        padding-bottom: 120px;
     }
     h2 {
         font-size: 34px;
@@ -399,6 +406,9 @@ footer {
     }
     .bottom-text {
         font-size: 18px;
+    }
+    .footer-section-content p {
+        margin: 4px auto;
     }
   }
 
@@ -454,7 +464,7 @@ footer {
         width: 65%;
     }
     .background {
-        padding: 60px 100px 60px 100px;
+        padding: 30px 100px 45px 100px;
     }
     #modal-popup {
         padding-top: 20%;
@@ -475,7 +485,7 @@ footer {
         margin-top: 25px;
     }
     #scoreContainer {
-        font-size: 30px;
+        font-size: 20px;
     }
     #restart-quiz {
         font-size: 18px;
