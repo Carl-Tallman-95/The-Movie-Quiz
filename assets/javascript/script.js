@@ -1,4 +1,4 @@
-
+/*jshint esversion: 6 */
 
 // The questions stored inside an array with questions as objects
 let questions = [
@@ -184,17 +184,17 @@ const span = document.getElementsByClassName("close")[0];
 // When user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
-}
+};
 // When the user clicks on span, close the modal
 span.onclick = function() {
     modal.style.display = "none";
-}
+};
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(closeEvent) {
     if (closeEvent.target == modal) {
         modal.style.display = "none";
     }
-}
+};
 
 // (1.3) Function for hiding the "play" div content 
 function hideStartScreen() {
@@ -208,13 +208,13 @@ function displayQuiz() {
 
 // (2.0) Displays the first question number in the quiz
 function displayQuestionNumber(questionNumber) {
-    document.getElementById("progress").innerHTML = `Question ${questionNumber} of ${questions.length}`;
+    progress.innerHTML = `Question ${questionNumber} of ${questions.length}`;
 }
 
 // (2.1) Display the question title in the quiz
 // Add the local paramamter questionIndex so we can reference it as the index
 function displayQuestionTitle(questionIndex) {
-    document.getElementById("questionText").innerHTML = questions[questionIndex].title
+    questionText.innerHTML = questions[questionIndex].title;
 }
 
 // Displays the current score
@@ -240,24 +240,24 @@ function showAnswers(questionIndex) {
 // (3.0) function for displaying the questions number, title, answers and score
 function displayQuestion(questionIndex) {
     // (3.4) Displays the question number
-    displayQuestionNumber(questionIndex +1)
+    displayQuestionNumber(questionIndex +1);
     
     // (2.1) display the first question title
-    displayQuestionTitle(questionIndex)
+    displayQuestionTitle(questionIndex);
     // (3.3) Displaying the answers string
-    showAnswers(questionIndex)
+    showAnswers(questionIndex);
     // Displays the score
-    displayScore()
+    displayScore();
 }
 
 // 1.2 function that, when clicked, hides the start screen and displays the first question in the quiz
 function onPlayButtonClick() {
     // (1.3) hide the text and play button
-    hideStartScreen()
+    hideStartScreen();
     // (1.5) display the quiz display from 'none' to 'block'
-    displayQuiz()
+    displayQuiz();
     // (3.1) display the question number, title, answers and score
-    displayQuestion(0)
+    displayQuestion(0);
 
 }
 
@@ -267,23 +267,23 @@ playButton.addEventListener('click', onPlayButtonClick);
 
 // (3.7) Function to go to the next question in the array
 function onAnswerAButtonClick() {
-    goToNextQuestion('A')
+    goToNextQuestion('A');
 }
 function onAnswerBButtonClick() {
-    goToNextQuestion('B')
+    goToNextQuestion('B');
 }
 function onAnswerCButtonClick() {
-    goToNextQuestion('C')
+    goToNextQuestion('C');
 }
 function onAnswerDButtonClick() {
-    goToNextQuestion('D')
+    goToNextQuestion('D');
 }
 
 // (4.0) Reduces the code to make the function change depending on the object answers using string litterals
 // We add the parameter selectedChoice so we can change it depending on what answer the user clicks
 function goToNextQuestion(selectedChoice) {
     if (questions[currentQuestionIndex].correct === questions[currentQuestionIndex][`choice${selectedChoice}`]) {
-        score++
+        score++;
     }
     // (4.1) if current question is the last question, the length of the array has to reduce by 1
     if (currentQuestionIndex === questions.length -1) {
@@ -295,7 +295,7 @@ function goToNextQuestion(selectedChoice) {
         showReturnButton.style.display = "block";
     }
     currentQuestionIndex +=1;
-    displayQuestion(currentQuestionIndex)
+    displayQuestion(currentQuestionIndex);
 
 }
 
