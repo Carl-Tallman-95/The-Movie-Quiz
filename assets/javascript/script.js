@@ -3,47 +3,26 @@
 // The questions stored inside an array with questions as objects
 let questions = [
     {
-
         title : "Who directed “The Shining“ from 1980?",
-
         choiceA : "Steven Spielberg",
-
         choiceB : "Stanley Kubrick",
-
         choiceC : "John Carpenter",
-
         choiceD : "Tobe Hooper",
-
         correct : "Stanley Kubrick"
-
     }, {
-
         title : "What year did the first “Star Wars“ film come out?",
-
         choiceA : "1984",
-
         choiceB : "1980",
-
         choiceC : "1977",
-
         choiceD : "1975",
-
         correct : "1977"
-
     }, {
-
         title : "What car was made famous by the film “Back to the Future“?",
-
         choiceA : "DeLorean DMC-12",
-
         choiceB : "Oldsmobile Delta 88",
-
         choiceC : "1982 Pontiac Trans Am",
-
         choiceD : "Ferrari 308 GTS",
-
         correct : "DeLorean DMC-12"
-
     }, {
 
         title : "Which actor had the main role in “Modern Times” and “The Kid”?",

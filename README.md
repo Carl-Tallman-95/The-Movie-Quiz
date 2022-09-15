@@ -14,7 +14,7 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 
 ![This is an image]()
 
-- "The Titel" and "The Modal" / "Instructions"
+- "The Title" and "The Modal" / "Instructions"
     - Featured at the top of the quiz game box, the user is introduced by a title screen that displays the name of the game.
     - The title clearly tells the user what game they are about to play and what the subject of the game is about. 
     - Under the title, there is a clickable modal button.

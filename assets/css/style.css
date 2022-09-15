@@ -55,9 +55,7 @@ body {
     margin: auto;
     width: 90%;
     padding-bottom: 50px;
-
 }
-
 
 .background {
     background: black;
@@ -163,7 +161,6 @@ ul li {
 ul li label {
     cursor: pointer;
 }
-
 
 .play-button {
     font-family: 'Bebas Neue', cursive;
@@ -287,6 +284,14 @@ ul li label {
     cursor: pointer;
 }
 
+.bottom-text{
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+    position: absolute;
+    bottom: 110px;
+}
+
 /* footer */
 footer {
     background: #222222;
@@ -368,7 +373,10 @@ footer {
 
     .play-button {
         width: 150px;
-    }  
+    }
+    .bottom-text {
+        font-size: 14px;
+    }
   }
 
 @media only screen and (min-width: 400px) {
@@ -377,6 +385,7 @@ footer {
     }
     .background-container {
         width: 85%;
+        padding-bottom: 60px;
     }
     .background {
         padding: 90px 40px 90px 40px;
@@ -394,6 +403,9 @@ footer {
     #scoreContainer {
         padding-top: 20px;
     }
+    .bottom-text {
+        font-size: 18px;
+    }
   }
 
   @media only screen and (min-width: 700px) {
@@ -401,7 +413,7 @@ footer {
         width: 70%;
     }
     .background {
-        padding: 80px 90px 80px 90px;
+        padding: 75px 90px 75px 90px;
     }
     #modal-popup {
         padding-top: 30%;
@@ -441,7 +453,6 @@ footer {
         padding-top: 25px;
         padding-bottom: 20px;
     }
-
   }
 
   @media only screen and (min-width: 1000px) {
@@ -477,7 +488,4 @@ footer {
         padding: 20px;
         width: 150px;
     }
-
-
-    
   }
