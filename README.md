@@ -33,7 +33,7 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 
 ![This is an image](assets/images/readme_images/)
 
-- The Quiz Question Number / The Quiz Current Question
+- The Quiz Question Number
     - Displayed on the top of every question, this function will allow the user to know what question they are on and know how many question are left.
     - The question number will uppdate by one when the user clicks on an answer and is taken to the next question.
     - The question number is displayed first for a better user experience and design.
@@ -54,12 +54,12 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 
 ![This is an image]()
 
-- The Completed Quiz Screen
+- The Completed Quiz
     - 
 
 ![This is an image]()
 
-- The footer
+- The Footer
 
     Featured at the bottom of the screen, the footer includes two social media links to my LinkedIn and GitHub profile. When clicked, the links will open in a new tab for easy navigation for the user.
     - The footer encourages users of the site to stay connected with via social media.
@@ -67,14 +67,14 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 ![This is an image](assets/images/readme_images/)
 
 **Features Left to Implement**
-- I would have liked to make a timer and a randomized question generator to make the game more challenging. This would of course mean that more questions would have to be added.
-It would also be useful if the user could enter their name that will be displayed at the end of the quiz along with their score.
+- I would have liked to make a timer and a randomized question generator to make the game more challenging. Although this would mean that more questions would have to be added.
+- Another feature to implement would be if the user could enter their name that that displays at the end of the quiz along with their score.
 
 ## Testing
 
 - I have tested this project site on different web browsers. Google Chrome, Microsoft Edge and Mozilla Firefox have all been tested and are working.
 - Tests while using the site on a Samsung smartphone are also working.
-- I have confirmed that the site is looking good and is responsive on different screen sizes by using the dev tools device toolbar.
+- I have confirmed that the site is responsive on different screen sizes by using the dev tools in Google Chrome.
 
 ## Bugs
 **Solved bugs**
