@@ -152,44 +152,27 @@ let currentQuestionIndex = 0;
 // Score count
 let score = 0;
 
-// Declare the quiz variable
-const quiz = document.getElementById("quiz");
-
-// Declare the variables
-const progress = document.getElementById("progress");
-
-// Declare the question title
-const questionText = document.getElementById("questionText");
-
-// (1.0) Declares the variable playButton from the id
-const playButton = document.getElementById("play-button");
-
-// (3.5) Declares the variable for the score container
-const quizContainer = document.getElementById("quiz-container");
-
-// Declares the variable for the score container
-const scoreContainer = document.getElementById("scoreContainer");
-
-// Declares the variable for the return button
-const showReturnButton = document.getElementById("show-return-button");
-
-// Modal JS (bonus)
-// Declare variables for the modal, button and span
+// Declare variables for the modal
 const modal = document.getElementById("modal-popup");
-// opens the modal
 const btn = document.getElementById("modal-trigger");
-// closes the modal
 const span = document.getElementsByClassName("close")[0];
 
-// When user clicks the button, open the modal
+// Declare the variables for the quiz
+const quiz = document.getElementById("quiz");
+const progress = document.getElementById("progress");
+const questionText = document.getElementById("questionText");
+const playButton = document.getElementById("play-button");
+const quizContainer = document.getElementById("quiz-container");
+const scoreContainer = document.getElementById("scoreContainer");
+const showReturnButton = document.getElementById("show-return-button");
+
+// When user clicks the button or outside the button, open or close the modal
 btn.onclick = function() {
     modal.style.display = "block";
 };
-// When the user clicks on span, close the modal
 span.onclick = function() {
     modal.style.display = "none";
 };
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function(closeEvent) {
     if (closeEvent.target == modal) {
         modal.style.display = "none";
@@ -294,8 +277,12 @@ function goToNextQuestion(selectedChoice) {
         // display the return button from the div
         showReturnButton.style.display = "block";
     }
+    
     currentQuestionIndex +=1;
-    displayQuestion(currentQuestionIndex);
+    if (currentQuestionIndex <=9) {
+        displayQuestion(currentQuestionIndex);
+    }
+
 
 }
 
@@ -307,14 +294,8 @@ answerC.addEventListener('click', onAnswerCButtonClick);
 answerD.addEventListener('click', onAnswerDButtonClick);
 
 
-function quitQuestionFunction() {
-    if (currentQuestionIndex === 9) {
-        return;
-        goToNextQuestion();
-    }
-}
-
-quitQuestionFunction();
+// --> ?? stop the functions displayQuestionTitle, displayQuestion, goToNextQuestion and onAnswerBButtonClick
+// after last question is answerd ?? <--
 
 
 // function quitQuestionFunction() {

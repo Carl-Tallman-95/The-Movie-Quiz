@@ -265,7 +265,6 @@ ul li label {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 30px;
     text-decoration: none;
     transition-duration: 0.4s;
 }
@@ -280,6 +279,7 @@ ul li label {
     font-weight: bold;
     background: #fff;
     color: #000;
+    margin-top: 30px;
     padding: 10px;
     width: 80px;
     border: 1px solid #000;
