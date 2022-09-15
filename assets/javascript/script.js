@@ -277,8 +277,9 @@ function goToNextQuestion(selectedChoice) {
         // display the return button from the div
         showReturnButton.style.display = "block";
     }
-    
     currentQuestionIndex +=1;
+    
+    // If condition is met continue
     if (currentQuestionIndex <=9) {
         displayQuestion(currentQuestionIndex);
     }
