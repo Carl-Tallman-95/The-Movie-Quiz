@@ -47,7 +47,7 @@ body {
     transform: scale(1.2);
 }
 
-/* Quiz box */
+/* Quiz Box */
 .background-container {
     display: flex;
     align-items: center;
@@ -95,7 +95,7 @@ h2 {
 #modal-trigger:hover {
     transform: scale(1.2);
 }
-/* Modal (background) */
+
 #modal-popup {
     display: none;
     position: fixed;
@@ -108,7 +108,7 @@ h2 {
     overflow: auto;
     background-color: rgba(0,0,0,0.5);
 }
-/* Modal Content */
+
 .modal-content {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -136,6 +136,8 @@ h2 {
     text-decoration: none;
     cursor: pointer;
 }
+
+/* The Quiz */
 
 #progress {
     text-align: center;

@@ -139,7 +139,7 @@ const answerB = document.getElementById("answerB");
 const answerC = document.getElementById("answerC");
 const answerD = document.getElementById("answerD");
 
-// (3.3) Function for displaying the answers string into the div
+// Function displaying the answers string into the div
 function showAnswers(questionIndex) {
     answerA.innerHTML = questions[questionIndex].choiceA;
     answerB.innerHTML = questions[questionIndex].choiceB;
@@ -147,35 +147,25 @@ function showAnswers(questionIndex) {
     answerD.innerHTML = questions[questionIndex].choiceD;
 }
 
-// (3.0) function for displaying the questions number, title, answers and score
+// Function displaying the questions number, title, answers and score
 function displayQuestion(questionIndex) {
-    // (3.4) Displays the question number
     displayQuestionNumber(questionIndex +1);
-    
-    // (2.1) display the first question title
     displayQuestionTitle(questionIndex);
-    // (3.3) Displaying the answers string
     showAnswers(questionIndex);
-    // Displays the score
     displayScore();
 }
 
-// 1.2 function that, when clicked, hides the start screen and displays the first question in the quiz
+// When clicked, hides the text and play button and displays the first question in the quiz
 function onPlayButtonClick() {
-    // (1.3) hide the text and play button
     hideStartScreen();
-    // (1.5) display the quiz display from 'none' to 'block'
     displayQuiz();
-    // (3.1) display the question number, title, answers and score
     displayQuestion(0);
-
 }
 
-// 1.1 Add event listener for when the user clicks the start button
-// 1.4 We then call the playbutton function "onPlayButtonClick" in the event listener after the 'click'
+// Event listener for when the user clicks the start button
 playButton.addEventListener('click', onPlayButtonClick);
 
-// (3.7) Function to go to the next question in the array
+// Function to go to the next question in the array
 function onAnswerAButtonClick() {
     goToNextQuestion('A');
 }
@@ -189,35 +179,28 @@ function onAnswerDButtonClick() {
     goToNextQuestion('D');
 }
 
-// (4.0) Reduces the code to make the function change depending on the object answers using string litterals
-// We add the parameter selectedChoice so we can change it depending on what answer the user clicks
+// Function that goes to the next question and (depending on the answer) add to the score
 function goToNextQuestion(selectedChoice) {
     if (questions[currentQuestionIndex].correct === questions[currentQuestionIndex][`choice${selectedChoice}`]) {
         score++;
     }
-    // (4.1) if current question is the last question, the length of the array has to reduce by 1
     if (currentQuestionIndex === questions.length -1) {
-        // hide the quiz
+        // Hide the quiz
         quizContainer.style.display = "none";
         // and display the message to the user
         scoreContainer.innerHTML = `Thank you for finishing my quiz! <br/><br/> Your score is: ${score} out of ${questions.length}`;
-        // display the return button from the div
+        // Display the return button from the div
         showReturnButton.style.display = "block";
     }
     currentQuestionIndex +=1;
     
     // If condition is met continue
-    // --> stop the functions displayQuestionTitle, displayQuestion, goToNextQuestion and onAnswerBButtonClick
-// after last question is answerd <--
     if (currentQuestionIndex <=9) {
         displayQuestion(currentQuestionIndex);
     }
-
-
 }
 
-// Individual event listeners
-// (3.6) Add the function parameter for each answer event listenre
+// Individual event listeners for each answer
 answerA.addEventListener('click', onAnswerAButtonClick);
 answerB.addEventListener('click', onAnswerBButtonClick);
 answerC.addEventListener('click', onAnswerCButtonClick);
