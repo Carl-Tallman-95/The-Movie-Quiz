@@ -280,6 +280,8 @@ function goToNextQuestion(selectedChoice) {
     currentQuestionIndex +=1;
     
     // If condition is met continue
+    // --> stop the functions displayQuestionTitle, displayQuestion, goToNextQuestion and onAnswerBButtonClick
+// after last question is answerd <--
     if (currentQuestionIndex <=9) {
         displayQuestion(currentQuestionIndex);
     }
@@ -294,16 +296,4 @@ answerB.addEventListener('click', onAnswerBButtonClick);
 answerC.addEventListener('click', onAnswerCButtonClick);
 answerD.addEventListener('click', onAnswerDButtonClick);
 
-
-// --> ?? stop the functions displayQuestionTitle, displayQuestion, goToNextQuestion and onAnswerBButtonClick
-// after last question is answerd ?? <--
-
-
-// function quitQuestionFunction() {
-//    if () {
-//        return
-//      } 
-//   }
-//
-//
 
