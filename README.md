@@ -4,7 +4,7 @@ This is the website for ”THE MOVIE QUIZ”.
 "THE MOVIE QUIZ" is a simple and fun quiz game to test your movie knowlage with friends and/or family members. The quiz will ask 10 varied questions related to popular films.
 Whether you want to brush up on your skills or have something to prove, "THE MOVIE QUIZ" is a fun and quick game for anybody who has a love for movies. Are you up for the challange?
 
-![This is an image](assets/images/readme_images/)
+![This is an image](assets/images/readme_images/amiresponsive_image.png)
 
 ## Features
 
@@ -86,16 +86,20 @@ It would also be useful if the user could enter their name that will be displaye
 
 ## Validator Testing
 
-- CSS
-    - No errors were found when passing through the official [(Jigsaw) validator]().
+- W3C HTML Validator
+    - No errors were found when passing through the official [W3C HTML Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcarl-tallman-95.github.io%2FThe-Movie-Quiz%2F).
+
+- W3C CSS Validator
+    - No errors were found when passing through the official [W3C CSS Validator (Jigsaw)](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcarl-tallman-95.github.io%2FThe-Movie-Quiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv).
 
 - JSHint
-    - No warnings were found when passing through the official []()
+    - No warnings were found when passing through the official [JSHint JavaScript Validator](https://jshint.com/)
+    ![This is an image](assets/images/readme_images/jshint_image.png)
 
 - Accessibility
     - I have confirmed that the colors and fonts chosen for this project are easy to read and accessible by using the lighthouse in dev tools.
 
-    ![This is an image](assets/images/readme_images/)
+    ![This is an image](assets/images/readme_images/lighthouse_image.png)
 
 ## Deployment
 
@@ -104,9 +108,9 @@ It would also be useful if the user could enter their name that will be displaye
     - Navigate to the GitHub repository, then navigate to the Settings tab.
     - Select the ***Pages***  tab on the left-hand menu.
     - Under the source section drop-down menu, select "Main" branch and save. It should look similar to this:
-    ![This is an image](assets/images/readme_images/)
+    ![This is an image](assets/images/readme_images/github_deployment_image.png)
 
-The Live link can be found here - [THE-MOVIE-QUIZ]()
+The Live link can be found here - [THE-MOVIE-QUIZ](https://carl-tallman-95.github.io/The-Movie-Quiz/)
 
  ### Creating a Clone
 
