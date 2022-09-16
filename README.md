@@ -13,7 +13,7 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
     - The header featured at the top of the page contains a clickable icon with the text "QUIZ" next to it that takes the user back to the home page.
     - The user can at any point click the icon in the header to return to the home page for a better user experience.
 
-![This is an image]()
+![This is an image](assets/images/readme_images/header_image.png)
 
 - "The Title" & "The Modal"
 
@@ -24,21 +24,21 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
     - When the user opens the modal, a screen appears with straightforward instructions about how to play the game.
     - The background is also darkened down to help the text stand out as a result of opening the modal.
 
-![This is an image](assets/images/readme_images/)
+![This is an image](assets/images/readme_images/title_and_modal_image.png)
 
 - The "PLAY" Button
 
     - The "PLAY" button featured under the modal, will start the quiz game and display the first question to the user when clicked.
     - The button is easily readable and has a simple design.
 
-![This is an image](assets/images/readme_images/)
+![This is an image](assets/images/readme_images/play_button_image.png)
 
 - The Quiz Question Number
 
     - Displayed on the top of every question, this function allows the user to know what question they are on and how many question are left in the quiz.
     - The question number will uppdate by one when the user clicks on an answer.
 
-![This is an image](assets/images/readme_images/)
+![This is an image](assets/images/readme_images/question_number_image.png)
 
 - The Quiz Questions & Answers
 
@@ -48,26 +48,26 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
     - When a user hovers over an answer, the answer will slightly change in scale for a more satisfactory user experience.
     - All answers are relevant to the subject with only one correct answer for each question.
 
-![This is an image](assets/images/readme_images/)
+![This is an image](assets/images/readme_images/questions_and_answers_image.png)
 
 - The Quiz Score
 
     - The score featured below the answers dislays to the user their current score. Every time the user picks the right answer, the score increases by one.
 
-![This is an image]()
+![This is an image](assets/images/readme_images/quiz_score_counter.png)
 
 - The Completed Quiz
 
     - Once the user has finished the quiz by answering the last question, the quiz box will display a message along with the total score.
 
-![This is an image]()
+![This is an image](assets/images/readme_images/completed_quiz_image.png)
 
 - The Footer
 
     - Featured at the bottom of the screen, the footer includes two social media links to my LinkedIn and GitHub profile.
     - When clicked, the links will open in a new tab for easier navigation and design.
 
-![This is an image](assets/images/readme_images/)
+![This is an image](assets/images/readme_images/footer_image.png)
 
 **Features Left to Implement**
 
