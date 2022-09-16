@@ -8,10 +8,10 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 
 ## Features
 
-- The Header
+- The Header Navbar
 
-    - The header featured at the top of the page contains a clickable icon with the text "QUIZ" next to it that takes the user back to the home page.
-    - The user can at any point click the icon in the header to return to the home page for a better user experience.
+    - The header navbar featured at the top of the page contains a clickable icon with the text "QUIZ" next to it that takes the user back to the home page.
+    - The user can at any point click the icon in the header navbar to return to the home page for a better user experience.
 
 ![This is an image](assets/images/readme_images/header_image.png)
 
@@ -83,12 +83,18 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 ## Bugs
 **Solved bugs**
 
-- I ran into a bug when I was trying to display the answers in the `showAnswerA` function. I would only get ”undefined” as the string for the answer. I checked the array and I realized I had targeted the wrong answer name. I tried to taget ’answerA’ instead of ’choiceA’.
+- I ran into a bug when I was trying to display the answers in the `showAnswerA` function. I would only get ”undefined” as the string for the answer. I checked the array and I realized I had targeted the wrong answer name. I tried to target `answerA` instead of `choiceA`.
 ![This is an image](assets/images/readme_images/showAnswerA_bug_image.png)
 
 - The `displayQuestionNumber(questionIndex)` function within the `displayQuestion` function would display the question number as question ”0 out of 10”. I solved this issue by adding `+1` to the parameter after `questionIndex` so that it starts with "1". This is because indexes start from "0" but the value from the array (`questions.length`) is "10".
 
 - I ran into a ”TypeError” when the last question answer was clicked. This was solved by adding a condition inside the `goToNextQuestion` function to continue if the index was less than or equal to "9".
+    
+ ```
+ if (currentQuestionIndex <=9) {
+        displayQuestion(currentQuestionIndex);
+    }
+ ```
 ![This is an image](assets/images/readme_images/typeerror_bug_image.png)
 
 **Unfixed bugs**
@@ -123,18 +129,37 @@ Whether you want to brush up on your skills or have something to prove, "THE MOV
 
 The Live link can be found here - [THE-MOVIE-QUIZ](https://carl-tallman-95.github.io/The-Movie-Quiz/)
 
+ ### Creating a Clone
+- To run this project locally you will need to:
+    
+    - Install the GitPod Browser Extension for the Google Chrome browser.
+
+    - After you have installed the extension, you can restart the browser and log into GitHub.
+    - First, locate the GitHub Repository, then click the green GitPod button in the top of the repository. A new GitPod workspace will be created from the code in GitHub where you can work locally.
+
+- To the project within a local IDE you will need to:
+    - Log into GitHub and locate the GitHub repository.
+    - Click the "Code" button below the repository name.
+    - Under where it says "Clone" you should see "HTTPS". Copy the repository clone URL under "HTTPs".
+    - Open the terminal in your local IDE.
+    - Alter the working directory location to where you want the cloned directory to be made.
+    - Enter "git clone", then just paste the URL you copied from the clone repository.
+    - Press Enter and your local clone should be created.
+
 
 ## Credits
 
 **Content**
 
-- The code to make the header was inspired by 
-- Used concepts and guides regarding quiz structure from (https://www.codingninjas.com/blog/2020/11/03/how-to-create-a-quiz-in-javascript/) aswell as (https://www.sitepoint.com/simple-javascript-quiz/).
+- The code to make the header navbar was inspired by [this youtube tutorial](https://www.youtube.com/watch?v=W-nIX17Gg-Q) and [this article](https://www.w3schools.com/css/css_navbar.asp).
 - The modal was made using similar code to the examples in this article(https://www.w3schools.com/howto/howto_css_modals.asp)
-- 
+- I used concepts and guides regarding quiz structure from [this article](https://www.codingninjas.com/blog/2020/11/03/how-to-create-a-quiz-in-javascript/) aswell as [this article](https://www.sitepoint.com/simple-javascript-quiz/).
+- A lot of credit also goes to [this youtube tutorial](https://www.youtube.com/watch?v=49pYIMygIcU&t=1625s) for explaining the syntax of making a quiz in detail.
+- [This article](https://stackoverflow.com/questions/27441803/why-does-jshint-throw-a-warning-if-i-am-using-const) also assisted when testing the code through the JSHint validator to make it accept ES6 code.
+- And a big thank you to my mentor [Harry Dhillon](https://github.com/Harry-Leepz) for all the tips and guidance through this project!
 
 **Media**
-- The fonts used (Bebas Neue, ?? and ??) was taken from [Google Fonts](https://fonts.google.com/).
+- The fonts used ('Bebas Neue', 'Fjalla One' and 'Inter') was taken from [Google Fonts](https://fonts.google.com/).
 - The icons used in the header aswell as the footer was taken from the free icons on [Font Awesome](https://fontawesome.com/).
 
 ## Technologies
